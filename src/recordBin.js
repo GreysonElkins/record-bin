@@ -2,15 +2,19 @@ import Vinyl from "./Vinyl"
 import Record from "./Record"
 
 const recordBin = [
-  (new Vinyl(
+  new Vinyl(
     "Boys & Girls",
     'Alabama Shakes"',
     36,
     2011,
     ["blues", "garage rock"],
     "Hold On",
-    "https://www.youtube.com/watch?v=Le-3MIBxQTw"
-  ).isGatefold = true),
+    "https://www.youtube.com/watch?v=Le-3MIBxQTw",
+    "black",
+    33,
+    true,
+    1 
+  ),
   new Vinyl(
     "Sound & Color",
     "Alabama Shakes",
@@ -33,6 +37,7 @@ const recordBin = [
     "Shameika",
     "https://www.youtube.com/watch?v=MbkugCPqxQY",
     "magenta",
+    33,
     true,
     2
   ),
@@ -46,7 +51,7 @@ const recordBin = [
     "https://www.youtube.com/watch?v=UuMRUcavgIg",
     "coke bottle green"
   ),
-  (new Vinyl(
+  new Vinyl(
     "The Lemon of Pink",
     "The Books",
     37,
@@ -54,8 +59,10 @@ const recordBin = [
     ["found sounds", "folk", "indie"],
     "PS",
     "https://www.youtube.com/watch?v=XsYEr5GPZzk",
-    "pink and yellow starburst"
-  ).isGatefold = true),
+    "pink and yellow starburst",
+    33,
+    true
+  ),
   new Vinyl(
     "Wobbly Dance Flower",
     "John Daversa",
@@ -97,17 +104,6 @@ const recordBin = [
     "https://www.youtube.com/watch?v=TQoVOAe2o9s",
     "clear"
   ),
-  new Record(
-    "American Dream",
-    "LCD Soundsystem",
-    69,
-    2017,
-    ["dance", "rock"],
-    "Call the Police",
-    "https://www.youtube.com/watch?v=EW3av1qgk00",
-    "casette",
-    "clear blue"
-  ),
   new Vinyl(
     "Semper Femina",
     "Laura Marling",
@@ -142,67 +138,29 @@ const recordBin = [
     "https://www.youtube.com/watch?v=yBQy_S_k-qg",
     "clear blue"
   ),
-  (new Vinyl(
+  new Vinyl(
     "American Egypt",
     "Mike Viola",
     40,
     2018,
     ["alternative"],
     "King Kong Hand",
-    "https://www.youtube.com/watch?v=v3nb8Tmk6jM"
-  ).isGatefold = true),
-  new Record(
-    "Red Earth",
-    "Y La Bamba",
-    36,
-    2006,
-    ["alternative"],
-    "Red Earth",
-    "https://www.youtube.com/watch?v=2M6MEU_ZqVA",
-    "cassette"
+    "https://www.youtube.com/watch?v=v3nb8Tmk6jM",
+    'black',
+    33,
+    true
   ),
-  new Record(
-    "Oh My God",
-    "Kevin Morby",
-    50,
-    2019,
-    ["alternative"],
-    "Piss River",
-    "https://www.youtube.com/watch?v=NjN-aKAmkEg",
-    "cassette",
-    "white"
-  ),
-  new Record(
-    "1989",
-    "Ryan Adams",
-    54,
-    2015,
-    ["rock", "pop"],
-    "STYLE",
-    "https://www.youtube.com/watch?v=JSyus3HlQPI",
-    "cassette",
-    "clear seafoam"
-  ),
-  new Record(
-    "No Romance",
-    "Greyson Elkins",
-    30,
-    2017,
-    ["indie", "alternative"],
-    "No Romance Being Haunted",
-    "https://soundcloud.com/greysonelkins/no-romance-being-haunted",
-    "cassette",
-    "clear"
-  ),
-  (new Vinyl(
+  new Vinyl(
     "Stairway to Paradise",
     "Mike Viola",
     15,
     2016,
     ["rock"],
     "Stairway to Paradise",
-    "https://www.youtube.com/watch?v=Qyi2r3C2-pU"
-  ).speed = 45),
+    "https://www.youtube.com/watch?v=Qyi2r3C2-pU",
+    'black',
+    45
+  ),
   new Vinyl(
     "Every Stone",
     "Manchester Orchestra",
@@ -213,15 +171,17 @@ const recordBin = [
     "Escape",
     ""
   ),
-  (new Vinyl(
+  new Vinyl(
     "Alone on Christmas Day",
     "Phoenix, Bill Murray",
     10,
     2015,
     ["indie", "christmas"],
     "Alone on Christmas Day",
-    "https://www.youtube.com/watch?v=UXnuXLNmr20"
-  ).speed = 45),
+    "https://www.youtube.com/watch?v=UXnuXLNmr20",
+    'black',
+    45
+  ),
   new Vinyl(
     "Smooth Jazz Apocalypse",
     "Reinier Baas",
@@ -250,7 +210,7 @@ const recordBin = [
     ["spoken word", "jazz", "electronic", "found sounds"],
     undefined,
     "https://www.youtube.com/watch?v=6SU6Ef30o4E"
-  ),
+  )
 ];
 
 export default recordBin;
